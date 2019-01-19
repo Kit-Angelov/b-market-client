@@ -22,7 +22,7 @@
         components: {
             'AppProducts': products
         },
-        name: "main"
+        name: "wrapper"
     }
 </script>
 

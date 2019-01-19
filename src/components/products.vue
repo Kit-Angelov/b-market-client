@@ -29,7 +29,8 @@
         name: "products",
         data () {
             return {
-                compact: false
+                compact: true,
+                products: []
             }
         },
         methods: {
@@ -41,7 +42,14 @@
             }
         },
         mounted () {
-            this.initMap()
+            if (this.compact) {
+                this.initMap();
+            }
+            this.axios.get('http://localhost:8000/products/').then((response) => {
+                console.log(response.data)
+            }).catch((error) => {
+                console.log(error)
+            });
         },
         computed: {
             catalogColMdClass () {

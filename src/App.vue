@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <app-main></app-main>
+    <app-wrapper></app-wrapper>
   </div>
 </template>
 
 <script>
-    import main from './components/main'
+    import wrapper from './components/wrapper'
 export default {
   name: 'app',
     components: {
-      'AppMain': main
+      'AppWrapper': wrapper
     },
   data () {
     return {
