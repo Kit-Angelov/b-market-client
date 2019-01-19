@@ -58,6 +58,7 @@
     }
     .products {
         padding: 0;
-        height: 100%;
+        margin-top: 50px;
+        height: calc(100% - 100px);
     }
 </style>
